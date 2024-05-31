@@ -8,16 +8,17 @@ var (Sucesso, linhasArquivo, QuantidadeLinhas) = arquivo.LerArquivo("Arquivos/ar
 if (sucesso)
 {
     Console.WriteLine("uantidade de linhas do arquivo: " + QuantidadeLinhas);
-    foreach(String linha in linhasArquivos)
+    foreach (String linha in linhasArquivos)
     {
         Console.WriteLine(linha);
     }
 }
-else{
+else
+{
     Console.WriteLine("Não foi possivel ler o arquivo");
 }
 
-
+Console.WriteLine("Meucu");
 
 
 
