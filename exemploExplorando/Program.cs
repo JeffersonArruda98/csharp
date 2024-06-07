@@ -1,11 +1,89 @@
 ﻿using exemploExplorando.models;
 using System.Globalization;
+using models;
+using Newtonsoft.Json;
 
-Pessoa p1 = new Pessoa("Jefferson", "Arruda");
 
-(string nome, string sobrenome) = p1;
+Venda v1 = new Venda(1, "Material de escritório", 25.00M);
 
-Console.WriteLine($"{nome} {sobrenome}");
+string serializado = JsonConvert.SerializeObject(v1);
+
+Console.WriteLine(serializado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int numero = 25;
+// bool ehPar = false;
+
+// //IF Ternário
+
+// ehPar = numero % 2 == 0;
+// Console.WriteLine($"O número {numero} é " + (ehPar ? "Par" : "Ímpar"));
+
+
+
+
+// if (numero % 2 == 0)
+// {
+//     Console.WriteLine($"O número {numero} é Par.");
+// }
+// else
+// {
+//     Console.WriteLine($"O número {numero} é Ímpar");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa("Jefferson", "Arruda");
+
+// (string nome, string sobrenome) = p1;
+
+// Console.WriteLine($"{nome} {sobrenome}");
 
 
 
